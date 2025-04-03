@@ -201,8 +201,8 @@ class XiaohongshuPoster:
         content_input = self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".ql-editor")))
         content_input.send_keys(content)
         # 发布
-        time.sleep(600)
-        submit_btn = self.driver.find_element(By.CSS_SELECTOR, ".el-button.publishBtn")
+        time.sleep(10)
+        submit_btn = self.driver.find_element(By.CSS_SELECTOR, ".publishBtn")
         submit_btn.click()
         
     def close(self):
